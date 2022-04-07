@@ -13,7 +13,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public List<Employee> getAllRecords() {
-		Collection<Employee> employees=EmployeeDataBase.getEmployeeList().values();
+		Collection<Employee> employees=EmployeeDataBase.getEmployeeList().values(); //value collection return krta hai
 		List<Employee> empList=new ArrayList<>(employees);
 		return empList;
 	}
