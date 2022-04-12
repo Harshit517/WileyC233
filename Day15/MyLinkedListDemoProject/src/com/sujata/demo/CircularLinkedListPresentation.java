@@ -2,9 +2,9 @@ package com.sujata.demo;
 
 import java.util.Scanner;
 
-public class SingleLinkedListPresentation {
+public class CircularLinkedListPresentation {
 
-	private SingleLinkedList singleLinkedList=new SingleLinkedList();
+	private CircularLinkedList circularLinkedList=new CircularLinkedList();
 	
 	public void showMenu() {
 		System.out.println("1. Insert Element in a List");
@@ -20,18 +20,18 @@ public class SingleLinkedListPresentation {
 		case 1:
 			System.out.println("Enter Element : ");
 			element=scanner.nextInt();
-			if(singleLinkedList.insert(element))
+			if(circularLinkedList.insert(element))
 				System.out.println("Data Inserted Successful");
 			else
 				System.out.println("Data Insertion Failed");
 			break;
 		case 2:
-			singleLinkedList.traverse();
+			circularLinkedList.traverse();
 			break;
 		case 3:
 			System.out.println("Enter Element : ");
 			element=scanner.nextInt();
-			if(singleLinkedList.delete(element))
+			if(circularLinkedList.delete(element))
 				System.out.println("Data Deleted Successful");
 			else
 				System.out.println("Data Deletion Failed");
